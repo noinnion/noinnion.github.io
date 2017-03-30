@@ -1,0 +1,141 @@
+/*
+ * Custom
+ *
+ */
+
+ body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 6rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/*
+ * Footer
+ *
+ */
+
+footer {
+    padding: 20px 0;
+    vertical-align: top;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+footer .left {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+footer .right {
+    float: right;
+}
+
+footer .copyright {
+    color: #666;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 950px) {
+    footer {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    footer {
+        text-align: center;
+    }
+    footer .copyright .text {
+        display: none;
+    }
+    footer .left,
+    footer .right {
+        float: none;
+    }
+}
+
+nav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    border-right: 1px solid #4a4a4a;
+    height: 20px;
+    line-height: 20px;
+}
+
+.inverse .navigation li {
+    border-right: 1px solid #ededed;
+}
+
+.inverse .navigation li:last-child {
+    border-right: none;
+}
+
+.navigation li a {
+    margin-right: 15px;
+    height: 20px;
+    display: inline-block;
+    overflow: auto;
+}
+
+.navigation li:last-child {
+    border-right: 0;
+    margin-right: 0;
+}
+
+.navigation li:last-child a {
+    margin-right: 0;
+}
+
+.navigation a {
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.navigation a:hover {
+    color: #999;
+}
+
+.bar {
+    width: 0px;
+    border-left: 1px solid #5e5e5e;
+}
+
+.github {
+    width: 11px;
+    height: 11px;
+}
+
+.bird {
+    width: 11px;
+    height: 9px;
+}
+
+@media screen and (max-width: 730px) {
+    .terms .long,
+    .privacy .long {
+        display: none;
+    }
+}

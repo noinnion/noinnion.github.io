@@ -14,14 +14,21 @@
         <div class="container">
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
+            <small>| {{ page.title }}</small>
           </h3>
         </div>
       </div>
 
+      {% if page.image %}
+        {% picture {{ page.image }} %}
+      {% endif %}
+    
       <div class="container content">
         {{ content }}
       </div>
+
+      {% include footer.html %}
+
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -43,5 +50,6 @@
         }, false);
       })(document);
     </script>
+    
   </body>
 </html>

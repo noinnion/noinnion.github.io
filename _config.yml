@@ -3,18 +3,23 @@
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 
-# Pagination
-gems:                [jekyll-paginate]
-paginate:            5
-paginate_path:       "page:num"
-
 # Setup
-title:               Lanyon
+title:               noinnion
 tagline:             'A Jekyll theme'
 description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
 
+# Custom vars
+version:             1.0.0
+
+# Conversion
+markdown:            redcarpet
+
+# Pagination
+gems:                [jekyll-paginate]
+paginate:            5
+paginate_path:       "page:num"
 
 # About/contact
 author:
@@ -22,5 +27,51 @@ author:
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
 
-# Custom vars
-version:             1.0.0
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/:title
+
+defaults:
+  -
+    scope:
+      path: "" 
+      type: pages
+    values:
+      layout: page
+
+# Jekyll-Picture-Tag
+picture:
+  source: assets/img/_fullsize
+  output: assets/img
+  markup: picture
+  presets:
+    # Full width pictures
+    default:
+      ppi: [1, 1.5]
+      attr:
+        class: blog-full
+        itemprop: image
+      source_lrg:
+        media: "(min-width: 40em)"
+        width: 700
+      source_med:
+        media: "(min-width: 30em)"
+        width: 450
+      source_default:
+        width: 350
+        height: 200
+    # Self-set resolution sources. Useful if you don't want a 1:1 image size to dppx ratio.
+    gallery:
+      source_wide_hi:
+        media: "(min-width: 40em) and (min-resolution: 1.5dppx)"
+        width: 900
+        height: 600
+      source_wide:
+        media: "(min-width: 40em)"
+        width: 600
+        height: 400
+      source_default:
+        width: 250
+        height: 250
