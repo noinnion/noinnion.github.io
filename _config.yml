@@ -9,6 +9,7 @@ tagline:             'A Jekyll theme'
 description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
+excerpt_separator:   <!--more-->
 
 # Custom vars
 version:             1.0.0
@@ -18,8 +19,8 @@ markdown:            redcarpet
 
 # Pagination
 gems:                [jekyll-paginate]
-paginate:            5
-paginate_path:       "page:num"
+paginate:            6
+paginate_path:       "blog/page:num"
 
 # About/contact
 author:
@@ -31,7 +32,7 @@ author:
 collections:
   pages:
     output: true
-    permalink: /:path/:title
+    permalink: /:title
 
 defaults:
   -
@@ -40,6 +41,8 @@ defaults:
       type: pages
     values:
       layout: page
+
+
 
 # Jekyll-Picture-Tag
 picture:
@@ -55,13 +58,12 @@ picture:
         itemprop: image
       source_lrg:
         media: "(min-width: 40em)"
-        width: 700
+        width: 1024
       source_med:
         media: "(min-width: 30em)"
-        width: 450
+        width: 800
       source_default:
-        width: 350
-        height: 200
+        width: 420
     # Self-set resolution sources. Useful if you don't want a 1:1 image size to dppx ratio.
     gallery:
       source_wide_hi:

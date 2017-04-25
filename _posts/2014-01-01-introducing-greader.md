@@ -5,6 +5,8 @@ title: Introducing gReader
 
 gReader was developed in the time when Google Reader service was the standard for feed aggregators. After it closure lots of new and innovative RSS services have arisen to light. gReader has decided to support 2 of the most popular services on the market, **Feedly** and **The Old Reader**. Even with the changes the goal is still to deliver best possible reading experience. So what makes gReader so special in comparison to other RSS readers.
 
+<!--more-->
+
 ### Simple, Fast and Intuitive
 
 Many of us have little time but we have to or want to consume a lot of information during the day. Our goal was to create a news reader with the best possible reading experience. Users can quickly read their news/feeds in a simple and intuitive user interface. Article pages can be reduced to the minimum of just the main contents, so that a reader could just concentrate on, well… reading! Consuming content at places without an internet connection is also possible using the great Offline Reading features. You can also let gReader read aloud your news for you, leaving your hands free for other tasks. These and many more features could help you to make reading your news faster.

@@ -1,0 +1,58 @@
+<section class="section section-header bg-gray">
+  <section class="grid-header container grid-960">
+    <nav class="navbar">
+      <section class="navbar-section">
+        <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
+        <a href="/greader" class="navbar-brand mr-10">{{ page.section }}</a>
+
+        {% if site.data.menu[page.menu] %}
+        {% assign menu = site.data.menu[page.menu] %}
+        <div class="dropdown">
+          <a class="btn btn-link dropdown-toggle" tabindex="0">{{ page.title }}<i class="icon icon-caret"></i></a>
+          <ul class="menu">
+          {% for submenu in menu %}
+            <li class="menu-item">
+              <a href="{{ submenu.url }}">{{ submenu.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% else %}
+        <a href="index.html" class="btn btn-link">{{ page.title }}</a>
+        {% endif %}
+      </section>
+      
+      <section class="navbar-section">
+        <a href="https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader" target="_blank" class="btn btn-primary">Play Store</a>
+      </section>
+    </nav>
+  </section>
+
+  {% if site.data.menu[page.submenu] %}
+  <section class="grid-header container grid-960 show-sm">
+    <nav class="navbar">
+      <section class="navbar-section">
+
+        {% assign menu = site.data.menu[page.submenu] %}
+        <div class="dropdown">
+          <a class="btn btn-link dropdown-toggle" tabindex="0">{{ page.title }}<i class="icon icon-caret"></i></a>
+          <ul class="menu">
+          {% for submenu in menu %}
+            <li class="menu-item">
+              <a href="{{ submenu.url }}">{{ submenu.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </section>      
+      <section class="navbar-section">
+      </section>      
+    </nav>
+  </section>  
+  {% endif %}
+
+
+</section>
+
+
+{% include sidebar.html %}

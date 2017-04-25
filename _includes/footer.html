@@ -1,56 +1,10 @@
-<footer data-jsx="2031223156" data-reactid="228">
-  <div class="left" data-jsx="2031223156" data-reactid="229"><span class="copyright" data-jsx="2031223156" data-reactid="230"><span class="text" data-jsx="2031223156" data-reactid="231">Copyright</span>
-    <!-- react-text: 232 -->
-    <!-- /react-text -->
-    <!-- react-text: 233 -->©
-    <!-- /react-text -->
-    <!-- react-text: 234 -->
-    <!-- /react-text -->
-    <!-- react-text: 235 -->2017
-    <!-- /react-text -->
-    <!-- react-text: 236 -->noinnion.com - All rights reserved.
-    <!-- /react-text -->
-    </span>
-  </div>
-  <div class="right" data-jsx="2031223156" data-reactid="237">
-    <nav class="inverse" data-jsx="521857548" data-reactid="238">
-      <ul class="navigation" data-jsx="521857548" data-reactid="239">
-        <li data-jsx="521857548" data-reactid="240">
-          <a class="github" href="https://github.com/noinnion/" target="_blank" data-jsx="521857548" data-reactid="241">
-            <svg viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" data-jsx="1605608751" data-reactid="242">
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" data-jsx="1605608751" data-reactid="243">
-                <g id="github" fill="#5E5E5E" data-jsx="1605608751" data-reactid="244">
-                  <path d="M16.3,0 C7.3,0 -3.55271368e-15,7.3 -3.55271368e-15,16.3 C-3.55271368e-15,23.5 4.7,29.6 11.1,31.8 C11.9,31.9 12.2,31.4 12.2,31 L12.2,28.2 C7.7,29.2 6.7,26 6.7,26 C6,24.2 5,23.7 5,23.7 C3.5,22.7 5.1,22.7 5.1,22.7 C6.7,22.8 7.6,24.4 7.6,24.4 C9.1,26.9 11.4,26.2 12.3,25.8 C12.4,24.7 12.9,24 13.3,23.6 C9.7,23.2 5.9,21.8 5.9,15.5 C5.9,13.7 6.5,12.3 7.6,11.1 C7.4,10.7 6.9,9 7.8,6.8 C7.8,6.8 9.2,6.4 12.3,8.5 C13.6,8.1 15,8 16.4,8 C17.8,8 19.2,8.2 20.5,8.5 C23.6,6.4 25,6.8 25,6.8 C25.9,9 25.3,10.7 25.2,11.1 C26.2,12.2 26.9,13.7 26.9,15.5 C26.9,21.8 23.1,23.1 19.5,23.5 C20.1,24 20.6,25 20.6,26.5 L20.6,31 C20.6,31.4 20.9,31.9 21.7,31.8 C28.2,29.6 32.8,23.5 32.8,16.3 C32.6,7.3 25.3,0 16.3,0 L16.3,0 Z"
-                    id="Shape" data-jsx="1605608751" data-reactid="245"></path>
-                </g>
-              </g>
-              <!-- react-empty: 246 -->
-            </svg>
-          </a>
-        </li>
-        <li data-jsx="521857548" data-reactid="247">
-          <a class="bird" href="https://twitter.com/noinnion" target="_blank" data-jsx="521857548" data-reactid="248">
-            <svg viewBox="0 0 11 9" xmlns="http://www.w3.org/2000/svg" data-jsx="1605608751" data-reactid="249">
-              <path d="M11 1.029L9.969 2.058v.171c0 .188-.03.368-.075.542-.024 1.415-.475 3.292-2.332 4.773C3.913 10.458 0 7.887 0 7.887c3.094 0 3.094-1.029 3.094-1.029-.688 0-2.063-1.371-2.063-1.371.344.342 1.032 0 1.032 0C.343 4.458.343 3.429.343 3.429c.344.343 1.032 0 1.032 0C-.344 2.058.687.343.687.343c.344 1.715 4.813 2.4 4.813 2.4l.057-.028a4.056 4.056 0 0 1-.057-.657C5.5.827 6.5 0 7.734 0c.68 0 1.28.309 1.69.786l.201-.1L10.656 0 9.97 1.372 11 1.029z"
-                fill="#5E5E5E" fill-rule="evenodd" data-jsx="1605608751" data-reactid="250"></path>
-              <!-- react-empty: 251 -->
-            </svg>
-          </a>
-        </li>
-        <li class="privacy" data-jsx="521857548" data-reactid="252">
-          <a data-jsx="521857548" href="/privacy" data-reactid="253">
-            <!-- react-text: 254 -->Privacy
-            <!-- /react-text --><span class="long" data-jsx="521857548" data-reactid="255"> Policy</span></a>
-        </li>
-        <li class="terms" data-jsx="521857548" data-reactid="256">
-          <a data-jsx="521857548" href="/terms" data-reactid="257">
-            <!-- react-text: 258 -->Terms
-            <!-- /react-text --><span class="long" data-jsx="521857548" data-reactid="259"> of Service</span></a>
-        </li>
-        <li data-jsx="521857548" data-reactid="260"><a href="mailto:noinnion@gmail.com" data-jsx="521857548" data-reactid="261">noinnion@gmail.com</a></li>
-      </ul>
-      <!-- react-empty: 262 -->
-    </nav>
-  </div>
-  <!-- react-empty: 263 -->
-</footer>
+  <footer class="bg-gray text-center">
+    <section id="copyright" class="grid-footer container grid-960">
+      <p>
+        {% for item in site.data.menu.footer %}
+        <a class="link" href="{{ item.url }}">{{ item.title }}</a>
+        {% endfor %}
+      </p>
+      <p>Copyright © 2017 noinnion.com - All rights reserved.</p>
+    </section>
+  </footer>

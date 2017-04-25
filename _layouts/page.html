@@ -2,7 +2,53 @@
 layout: default
 ---
 
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
-</div>
+<section class="container grid-960">
+  <section class="columns">
+
+    <div class="docs-content column col-12 col-sm-12">
+
+      <section id="whatsnew" class="container">
+        <header class="text-center">
+          <h3>{{ page.title }}</h3>
+        </header>
+        <section class="notes">
+
+          {% if site.data.menu[page.submenu] %}
+          <div class="columns">
+            <div class="column col-3 col-sm-12 hide-sm">
+              <ul class="menu">
+              <li class="menu-item">
+                  <div class="tile tile-centered">
+                    <div class="tile-icon">
+                      <img src="img/avatar-4.png" class="avatar">
+                    </div>
+                    <div class="tile-content">
+                      Steve Rogers
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+              {% for entry in site.data.menu[page.submenu] %}
+                <li class="menu-item">
+                  <a href="{{ entry.url }}">{{ entry.title }}</a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+            <div class="column col-9 col-sm-12">
+              {{ content }}
+            </div>
+          </div>
+          
+          {% else %}
+            {{ content }}
+          {% endif %}
+
+        </section>
+      </section>
+
+      </div>
+
+  </section>
+</section>
+

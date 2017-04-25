@@ -1,6 +1,7 @@
 /*
- * Custom
+ * Global resets
  *
+ * Update the foundational and global aspects of the page.
  */
 
  body {
@@ -10,6 +11,36 @@
     padding-bottom: 6rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     text-rendering: optimizeLegibility;
+}
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  margin-bottom: 0;
+}
+
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: inline;
+  }
+}
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container.full {
+  padding-left:  0 !important;
+  padding-right: 0 !important;
 }
 
 /*

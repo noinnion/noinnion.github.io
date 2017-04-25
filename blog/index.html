@@ -1,0 +1,78 @@
+---
+layout: page
+title: Blog
+---
+
+<section class="container grid-960">
+  <section class="columns">
+
+    <div class="docs-content column col-12 col-sm-12">
+
+      <section id="blog" class="container">
+
+        <section class="notes">
+          <div class="columns">
+
+            {% for post in paginator.posts %}
+          <div class="column col-6 col-md-12">
+            <div class="card">
+              <div class="card-image">
+                <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg">
+              </div>
+              <div class="card-header">
+                <div class="card-title">
+                  <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+                </div>
+                <div class="card-subtitle">{{ post.date | date_to_string }}</div>
+              </div>
+              <div class="card-body">
+                {{ post.excerpt }}
+              </div>
+            </div>
+          </div>
+
+
+            {% endfor %}
+
+            </div>
+        </section>
+
+          <section class="container">
+            <div class="divider"></div>
+
+            <ul class="pagination">
+              {% if paginator.previous_page %} 
+                            <li class="page-item page-prev">
+              {% if paginator.page == 2 %}
+                <a href="{{ site.baseurl }}/blog/">
+              {% else %}
+                <a href="{{ site.baseurl }}/blog/page{{paginator.previous_page}}">
+              {% endif %} 
+                  <p class="page-item-subtitle">Previous</p>
+                  <h3 class="page-item-title">Getting started</h3>
+                </a>
+              </li>
+              
+              {% endif %} 
+              
+              
+              {% if paginator.next_page %}
+              <li class="page-item page-next">
+                <a href="{{ site.baseurl }}/blog/page{{paginator.next_page}}">
+                  <p class="page-item-subtitle">Next</p>
+                  <h3 class="page-item-title">Layout</h3>
+                </a>
+              </li>
+              {% endif %}
+
+            </ul>
+
+          </section>
+
+      </section>
+
+    </div>
+
+  </section>
+</section>
+

@@ -1,0 +1,79 @@
+main:
+  - title: Home
+    key: home
+    url: /
+  - title: Blog
+    key: blog
+    url: /blog
+  - title: gReader
+    key: greader
+    url: /greader
+  - title: News+
+    key: newsplus
+    url: /newsplus
+  - title: EverClip
+    key: everclip
+    url: /everclip
+  - title: Voice Reading
+    key: voicereading
+    url: /voicereading
+
+greader:
+  - title: Guide
+    url: /greader/guide
+  - title: What's News
+    url: /greader/updates
+  - title: Support
+    url: /greader/support
+
+greader-guide:
+  - title: Getting Started
+    url: /greader/guide
+  - title: What Is RSS
+    url: /greader/guide/what-is-rss
+  - title: Reading
+    url: /greader/guide/reading
+  - title: Widgets
+    url: /greader/guide/widgets
+  - title: Voice Reading
+    url: /greader/guide/voice-reading
+  - title: Themes
+    url: /greader/guide/themes
+  - title: Subscriptions
+    url: /greader/guide/subscriptions
+  - title: Search Filters
+    url: /greader/guide/search-filters
+  - title: Pro Features
+    url: /greader/guide/pro-features
+  - title: Podcasts
+    url: /greader/guide/podcasts
+  - title: Offline Reading
+    url: /greader/guide/offline-reading
+  - title: Hidden Features
+    url: /greader/guide/hidden-features
+
+everclip:
+  - title: Guide
+    url: /everclip/guide
+  - title: What's News
+    url: /everclip/updates
+  - title: Support
+    url: /everclip/support
+
+voicereading:
+  - title: Guide
+    url: /voicereading/guide
+  - title: What's News
+    url: /voicereading/updates
+  - title: Support
+    url: /voicereading/support
+
+footer:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog
+  - title: Terms
+    url: /terms
+  - title: Privacy Policy
+    url: /privacy
