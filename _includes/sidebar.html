@@ -1,0 +1,23 @@
+<div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
+  <ul class="docs-nav nav">
+    {% if site.data.menu.main[0] %} 
+    {% for item in site.data.menu.main %}
+    <li class="nav-item {% if item.key == page.menu %} active{% endif %}">
+      <a href="{{ item.url }}">{{ item.title }}</a> 
+      
+      {% if item.key == page.menu and site.data.menu[item.key] %}
+      <ul class="nav">
+        {% for entry in site.data.menu[item.key] %}
+        <li class="nav-item">
+          <a href="{{ entry.url }}">{{ entry.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+    </li>
+    {% endfor %} 
+    {% endif %}
+  </ul>
+</div>
+<a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>

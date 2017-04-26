@@ -1,132 +1,11 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-  	<head>
-		<meta charset="UTF-8" />
-		<meta name="robots" content="index, follow" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="author" content="https://github.com/noinnion/" />
-		<title>noinnion - We make your life easier</title>
-		<link rel="stylesheet" href="/assets/css/spectre.css" />
-		<link rel="stylesheet" href="/assets/css/spectre-exp.css" />
-		<link rel="stylesheet" href="/assets/css/spectre-icons.css" />
-		<link rel="stylesheet" href="/assets/css/docs.css" />
-	</head>
-
-  <body>
-
-    <section class="section section-header bg-gray">
-  <section class="grid-header container grid-960">
-    <nav class="navbar">
-      <section class="navbar-section">
-        <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
-        <a href="/greader" class="navbar-brand mr-10">gReader</a>
-
-        
-        
-        <div class="dropdown">
-          <a class="btn btn-link dropdown-toggle" tabindex="0">Home<i class="icon icon-caret"></i></a>
-          <ul class="menu">
-          
-            <li class="menu-item">
-              <a href="/greader/guide">Guide</a>
-            </li>
-          
-            <li class="menu-item">
-              <a href="/greader/updates">What's News</a>
-            </li>
-          
-            <li class="menu-item">
-              <a href="/greader/support">Support</a>
-            </li>
-          
-          </ul>
-        </div>
-        
-      </section>
-      
-      <section class="navbar-section">
-        <a href="https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader" target="_blank" class="btn btn-primary">Play Store</a>
-      </section>
-    </nav>
-  </section>
-
-  
-
-
-</section>
-
-
-<div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
-  <ul class="docs-nav nav">
-     
-    
-    <li class="nav-item ">
-      <a href="/">Home</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/blog">Blog</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item  active">
-      <a href="/greader">gReader</a> 
-      
-      
-      <ul class="nav">
-        
-        <li class="nav-item">
-          <a href="/greader/guide">Guide</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="/greader/updates">What's News</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="/greader/support">Support</a>
-        </li>
-        
-      </ul>
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/newsplus">News+</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/everclip">EverClip</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/voicereading">Voice Reading</a> 
-      
-      
-
-    </li>
-     
-    
-  </ul>
-</div>
-<a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
-
-
-    <section class="section section-hero bg-gray">
+---
+layout: default
+type: page
+title: Home
+section: gReader
+menu: greader
+---
+<section class="section section-hero bg-gray">
   <section id="overview" class="grid-hero container grid-960 text-center">
     <h1>gReader</h1>
     <h2>A
@@ -140,16 +19,7 @@
       </div>
     </div>
     <div class="columns">
-      <picture>
-    <source srcset="http://localhost:4000/assets/img/greader_phone_tablet-1536by829-6ce39d.png" media="(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)">
-    <source srcset="http://localhost:4000/assets/img/greader_phone_tablet-1024by552-6ce39d.png" media="(min-width: 40em)">
-    <source srcset="http://localhost:4000/assets/img/greader_phone_tablet-1200by647-6ce39d.png" media="(min-width: 30em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 30em) and (min-resolution: 144dpi)">
-    <source srcset="http://localhost:4000/assets/img/greader_phone_tablet-800by432-6ce39d.png" media="(min-width: 30em)">
-    <source srcset="http://localhost:4000/assets/img/greader_phone_tablet-630by340-6ce39d.png" media="(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)">
-    <source srcset="http://localhost:4000/assets/img/greader_phone_tablet-420by227-6ce39d.png">
-    <img src="http://localhost:4000/assets/img/greader_phone_tablet-420by227-6ce39d.png" class="img-fit-cover" itemprop="image" alt="gReader" style="background: #f8f9fa; height: 30rem; width: 100%;" >
-  </picture>
-
+      {% picture greader_phone_tablet.png class="img-fit-cover" alt="gReader" style="background: #f8f9fa; height: 30rem; width: 100%;" %}
     </div>
   </section>
 </section>
@@ -405,24 +275,3 @@
   </section>
 </section>
 
-
-
-      <footer class="bg-gray text-center">
-    <section id="copyright" class="grid-footer container grid-960">
-      <p>
-        
-        <a class="link" href="/">Home</a>
-        
-        <a class="link" href="/blog">Blog</a>
-        
-        <a class="link" href="/terms">Terms</a>
-        
-        <a class="link" href="/privacy">Privacy Policy</a>
-        
-      </p>
-      <p>Copyright © 2017 noinnion.com - All rights reserved.</p>
-    </section>
-  </footer>
-    
-  </body>
-</html>

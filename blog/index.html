@@ -1,110 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-us">
+---
+layout: page
+title: Blog
+---
 
-  	<head>
-		<meta charset="UTF-8" />
-		<meta name="robots" content="index, follow" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="author" content="https://github.com/noinnion/" />
-		<title>noinnion - We make your life easier</title>
-		<link rel="stylesheet" href="/assets/css/spectre.css" />
-		<link rel="stylesheet" href="/assets/css/spectre-exp.css" />
-		<link rel="stylesheet" href="/assets/css/spectre-icons.css" />
-		<link rel="stylesheet" href="/assets/css/docs.css" />
-	</head>
-
-  <body>
-
-    <section class="section section-header bg-gray">
-  <section class="grid-header container grid-960">
-    <nav class="navbar">
-      <section class="navbar-section">
-        <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
-        <a href="/greader" class="navbar-brand mr-10"></a>
-
-        
-        <a href="index.html" class="btn btn-link">Blog</a>
-        
-      </section>
-      
-      <section class="navbar-section">
-        <a href="https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader" target="_blank" class="btn btn-primary">Play Store</a>
-      </section>
-    </nav>
-  </section>
-
-  
-
-
-</section>
-
-
-<div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
-  <ul class="docs-nav nav">
-     
-    
-    <li class="nav-item ">
-      <a href="/">Home</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/blog">Blog</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/greader">gReader</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/newsplus">News+</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/everclip">EverClip</a> 
-      
-      
-
-    </li>
-    
-    <li class="nav-item ">
-      <a href="/voicereading">Voice Reading</a> 
-      
-      
-
-    </li>
-     
-    
-  </ul>
-</div>
-<a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
-
-
-    <section class="container grid-960">
-  <section class="columns">
-
-    <div class="docs-content column col-12 col-sm-12">
-
-      <section id="whatsnew" class="container">
-        <header class="text-center">
-          <h3>Blog</h3>
-        </header>
-        <section class="notes">
-
-          
-            <section class="container grid-960">
+<section class="container grid-960">
   <section class="columns">
 
     <div class="docs-content column col-12 col-sm-12">
@@ -114,7 +13,7 @@
         <section class="notes">
           <div class="columns">
 
-            
+            {% for post in paginator.posts %}
           <div class="column col-6 col-md-12">
             <div class="card">
               <div class="card-image">
@@ -122,131 +21,18 @@
               </div>
               <div class="card-header">
                 <div class="card-title">
-                  <a href="//greader/news+/2014/12/29/customizable-floating-action-button/">Customizable floating action button</a>
+                  <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
                 </div>
-                <div class="card-subtitle">29 Dec 2014</div>
+                <div class="card-subtitle">{{ post.date | date_to_string }}</div>
               </div>
               <div class="card-body">
-                <p>Since version 4.0.0 gReader introduced the new Material Design. One of its element is the floating action button (FAB) to mark all as read. To mark all articles as read you can swipe the button horizontal. Swiping vertical give you more additional options. With the update v4.0.2 we make it customisable. You can customise its position, style or opacity to your desire. All settings can be found in Settings-&gt;Reading Preferences-&gt;Mark All As Read.</p>
-
-
-
+                {{ post.excerpt }}
               </div>
             </div>
           </div>
 
 
-            
-          <div class="column col-6 col-md-12">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg">
-              </div>
-              <div class="card-header">
-                <div class="card-title">
-                  <a href="//greader/2014/12/20/material-design-greader/">Material Design in gReader</a>
-                </div>
-                <div class="card-subtitle">20 Dec 2014</div>
-              </div>
-              <div class="card-body">
-                <p>You might have heard about Material Design with the introduction of Lollipop. We take this occasion to redesign gReader (News+ coming soon) with the new Google design guideline. The new changes will be available in v4.0.0. <a title="gReader" href="https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader" target="_blank">https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader</a></p>
-
-
-
-              </div>
-            </div>
-          </div>
-
-
-            
-          <div class="column col-6 col-md-12">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg">
-              </div>
-              <div class="card-header">
-                <div class="card-title">
-                  <a href="//greader/2014/09/20/run-greader-on-chromeos-or-chrome-in-windows-macosx-and-linux/">Run gReader on ChromeOS or Chrome in Windows, MacOSX and Linux</a>
-                </div>
-                <div class="card-subtitle">20 Sep 2014</div>
-              </div>
-              <div class="card-body">
-                <p>Google has officially made it possible to run Android apps on Chrome OS devices. Developer Vladikoff made ArChon, a customized version of the Android Runtime for Chrome, which loads up as a standard manual Chrome extension.</p>
-
-
-
-              </div>
-            </div>
-          </div>
-
-
-            
-          <div class="column col-6 col-md-12">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg">
-              </div>
-              <div class="card-header">
-                <div class="card-title">
-                  <a href="//greader/news+/2014/06/11/feedly-ddos-attack/">Feedly under DDoS attack</a>
-                </div>
-                <div class="card-subtitle">11 Jun 2014</div>
-              </div>
-              <div class="card-body">
-                <p>Many of you have report us about synchronization issue with Feedly. The reason for the issue is that <a title="Feedly under DDoS attack" href="http://blog.feedly.com/2014/06/11/denial-of-service-attack/" target="_blank">Feedly was attacked by criminals with a distributed denial of service attack (DDoS)</a>.</p>
-
-
-
-              </div>
-            </div>
-          </div>
-
-
-            
-          <div class="column col-6 col-md-12">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg">
-              </div>
-              <div class="card-header">
-                <div class="card-title">
-                  <a href="//greader/news+/2014/05/13/custom-notification-for-feeds/">Custom notification for feeds</a>
-                </div>
-                <div class="card-subtitle">13 May 2014</div>
-              </div>
-              <div class="card-body">
-                <p>With gReader 3.7.0 and News+ v1.1.0 we introduce Custom Notification. Custom Notification is a Pro/Premium feature.</p>
-
-
-
-              </div>
-            </div>
-          </div>
-
-
-            
-          <div class="column col-6 col-md-12">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="https://picturepan2.github.io/spectre/img/osx-el-capitan.jpg">
-              </div>
-              <div class="card-header">
-                <div class="card-title">
-                  <a href="//greader/news+/2014/05/13/new-themes-for-greader-and-newsplus-blue-and-green/">New themes for gReader and News+: Blue and Green</a>
-                </div>
-                <div class="card-subtitle">13 May 2014</div>
-              </div>
-              <div class="card-body">
-                <p>With gReader 3.7.0 and News+ v1.1.0 we introduce 2 more themes. Blue and Green themes should give you more choices for light themes. You will find the new themes in the theme dialog.</p>
-
-
-
-              </div>
-            </div>
-          </div>
-
-
-            
+            {% endfor %}
 
             </div>
         </section>
@@ -255,17 +41,29 @@
             <div class="divider"></div>
 
             <ul class="pagination">
-               
+              {% if paginator.previous_page %} 
+                            <li class="page-item page-prev">
+              {% if paginator.page == 2 %}
+                <a href="{{ site.baseurl }}/blog/">
+              {% else %}
+                <a href="{{ site.baseurl }}/blog/page{{paginator.previous_page}}">
+              {% endif %} 
+                  <p class="page-item-subtitle">Previous</p>
+                  <h3 class="page-item-title">Getting started</h3>
+                </a>
+              </li>
+              
+              {% endif %} 
               
               
-              
+              {% if paginator.next_page %}
               <li class="page-item page-next">
-                <a href="/blog/page2">
+                <a href="{{ site.baseurl }}/blog/page{{paginator.next_page}}">
                   <p class="page-item-subtitle">Next</p>
                   <h3 class="page-item-title">Layout</h3>
                 </a>
               </li>
-              
+              {% endif %}
 
             </ul>
 
@@ -278,35 +76,3 @@
   </section>
 </section>
 
-
-          
-
-        </section>
-      </section>
-
-      </div>
-
-  </section>
-</section>
-
-
-
-      <footer class="bg-gray text-center">
-    <section id="copyright" class="grid-footer container grid-960">
-      <p>
-        
-        <a class="link" href="/">Home</a>
-        
-        <a class="link" href="/blog">Blog</a>
-        
-        <a class="link" href="/terms">Terms</a>
-        
-        <a class="link" href="/privacy">Privacy Policy</a>
-        
-      </p>
-      <p>Copyright © 2017 noinnion.com - All rights reserved.</p>
-    </section>
-  </footer>
-    
-  </body>
-</html>
