@@ -1,28 +1,411 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>noinnion</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-04-26T09:59:32+02:00</updated>
+ <id>http://localhost:4000</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>Mark Otto</name>
+   <email>markdotto@gmail.com</email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>Customizable floating action button</title>
+   <link href="http://localhost:4000/greader/news+/2014/12/29/customizable-floating-action-button/"/>
+   <updated>2014-12-29T21:00:20+01:00</updated>
+   <id>http://localhost:4000/greader/news+/2014/12/29/customizable-floating-action-button</id>
+   <content type="html">&lt;p&gt;Since version 4.0.0 gReader introduced the new Material Design. One of its element is the floating action button (FAB) to mark all as read. To mark all articles as read you can swipe the button horizontal. Swiping vertical give you more additional options. With the update v4.0.2 we make it customisable. You can customise its position, style or opacity to your desire. All settings can be found in Settings-&amp;gt;Reading Preferences-&amp;gt;Mark All As Read.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Position&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Disable - Mark all as read button is located in actionbar.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/fab_position_disable.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7605&quot; src=&quot;/assets/fab_position_disable-300x104.png&quot; alt=&quot;fab_position_disable&quot; width=&quot;300&quot; height=&quot;104&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Left - Located at bottom left&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/fab_position_left.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7606&quot; src=&quot;/assets/fab_position_left-300x104.png&quot; alt=&quot;fab_position_left&quot; width=&quot;300&quot; height=&quot;104&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Right - Located at bottom right&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/fab_position_right.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7607&quot; src=&quot;/assets/fab_position_right-300x104.png&quot; alt=&quot;fab_position_right&quot; width=&quot;300&quot; height=&quot;104&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Style&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Simple - Use simple color as background.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/fab_style_simple.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7609&quot; src=&quot;/assets/fab_style_simple-300x104.png&quot; alt=&quot;fab_style_simple&quot; width=&quot;300&quot; height=&quot;104&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Material - Use accent color of material design theme.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/fab_style_right.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7608&quot; src=&quot;/assets/fab_style_right-300x104.png&quot; alt=&quot;fab_style_right&quot; width=&quot;300&quot; height=&quot;104&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Opacity&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Fully tranparency - 25% visible - 50% visible - 75% visible -Fully opaque&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/fab_opacity_simple.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7611&quot; src=&quot;/assets/fab_opacity_simple-300x104.png&quot; alt=&quot;fab_opacity_simple&quot; width=&quot;300&quot; height=&quot;104&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/fab_opacity_material.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7610&quot; src=&quot;/assets/fab_opacity_material-300x104.png&quot; alt=&quot;fab_opacity_material&quot; width=&quot;300&quot; height=&quot;104&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>Material Design in gReader</title>
+   <link href="http://localhost:4000/greader/2014/12/20/material-design-greader/"/>
+   <updated>2014-12-20T00:13:46+01:00</updated>
+   <id>http://localhost:4000/greader/2014/12/20/material-design-greader</id>
+   <content type="html">&lt;p&gt;You might have heard about Material Design with the introduction of Lollipop. We take this occasion to redesign gReader (News+ coming soon) with the new Google design guideline. The new changes will be available in v4.0.0. &lt;a title=&quot;gReader&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader&quot; target=&quot;_blank&quot;&gt;https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader&lt;/a&gt;&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Home&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On phone interface the bottom navigation bar is removed. Sync, item options and toggle unread features from the bar are moved to the actionbar. Mark All As Read becomes a floating action button. The position of the button is configurable  in Settings-&amp;gt;Reading Preferences -&amp;gt; Mark all as read.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;img class=&quot;alignnone size-medium wp-image-7567&quot; src=&quot;/assets/mtrl_home-169x300.png&quot; alt=&quot;mtrl_home&quot; width=&quot;169&quot; height=&quot;300&quot; /&gt; &lt;img class=&quot;alignnone size-medium wp-image-7569&quot; src=&quot;/assets/view_menu-182x300.png&quot; alt=&quot;view_menu&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/sub_menu.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7577&quot; src=&quot;/assets/sub_menu-182x300.png&quot; alt=&quot;sub_menu&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Adding subscription is moved to subscription section (plus button). Manage sources and other entries now are located in the sub menu of subscriptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/mtrl_home_tablet.png&quot;&gt;&lt;img class=&quot;alignnone wp-image-7568&quot; src=&quot;/assets/mtrl_home_tablet.png&quot; alt=&quot;mtrl_home_tablet&quot; width=&quot;552&quot; height=&quot;324&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;List, Grid and Card&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In addition to List and Grid view gReader now supports Card view. Card view are similar to List view but it has larger thumbnail preview.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/home_list3.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7573&quot; src=&quot;/assets/home_list3-182x300.png&quot; alt=&quot;home_list3&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/home_grid2.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7574&quot; src=&quot;/assets/home_grid2-182x300.png&quot; alt=&quot;home_grid2&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/home_card3.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7575&quot; src=&quot;/assets/home_card3-182x300.png&quot; alt=&quot;home_card3&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gestures&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Swipe gestures are improved in the new version. You can swipe down a list to synchronize items. Swiping an item from right to left reveals additional functions. In article view you can go back to the list by swiping from the left edge.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/swipe_refresh.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7581&quot; src=&quot;/assets/swipe_refresh-169x300.png&quot; alt=&quot;swipe_refresh&quot; width=&quot;169&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/swipe_item.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7580&quot; src=&quot;/assets/swipe_item-169x300.png&quot; alt=&quot;swipe_item&quot; width=&quot;169&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/swipe_go_back.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7579&quot; src=&quot;/assets/swipe_go_back-169x300.png&quot; alt=&quot;swipe_go_back&quot; width=&quot;169&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Themes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Blue is not your color? Try other beautiful themes - Green, Sepia, Dark or Black&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/home_card_green.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7584&quot; src=&quot;/assets/home_card_green-182x300.png&quot; alt=&quot;home_card_green&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/feedlist_sepia.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7583&quot; src=&quot;/assets/feedlist_sepia-182x300.png&quot; alt=&quot;feedlist_sepia&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/listview_dark.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7585&quot; src=&quot;/assets/listview_dark-182x300.png&quot; alt=&quot;listview_dark&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/gridview_black.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7586&quot; src=&quot;/assets/gridview_black-182x300.png&quot; alt=&quot;gridview_black&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;and more ...&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/login_pro.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7588&quot; src=&quot;/assets/login_pro-191x300.png&quot; alt=&quot;login_pro&quot; width=&quot;191&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/add_sub_pod.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7589&quot; src=&quot;/assets/add_sub_pod-182x300.png&quot; alt=&quot;add_sub_pod&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/tts_2.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7590&quot; src=&quot;/assets/tts_2-182x300.png&quot; alt=&quot;tts_2&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://noinnion.com/wp-content/uploads/podcast_play.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-7591&quot; src=&quot;/assets/podcast_play-182x300.png&quot; alt=&quot;podcast_play&quot; width=&quot;182&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Run gReader on ChromeOS or Chrome in Windows, MacOSX and Linux</title>
+   <link href="http://localhost:4000/greader/2014/09/20/run-greader-on-chromeos-or-chrome-in-windows-macosx-and-linux/"/>
+   <updated>2014-09-20T22:06:41+02:00</updated>
+   <id>http://localhost:4000/greader/2014/09/20/run-greader-on-chromeos-or-chrome-in-windows-macosx-and-linux</id>
+   <content type="html">&lt;p&gt;Google has officially made it possible to run Android apps on Chrome OS devices. Developer Vladikoff made ArChon, a customized version of the Android Runtime for Chrome, which loads up as a standard manual Chrome extension.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;Github: &lt;a title=&quot;ArChon&quot; href=&quot;https://github.com/vladikoff/chromeos-apk/blob/master/archon.md&quot; target=&quot;_blank&quot;&gt;https://github.com/vladikoff/chromeos-apk/blob/master/archon.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here is a tutorial how to run gReader&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;ngg_displayed_gallery mceItem&quot; src=&quot;/assets/id--7528&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: You must have Chrome 37+ installed. (If it doesn't work try Chrome Canary).&lt;br /&gt;
+&lt;strong&gt;OS X Note&lt;/strong&gt;: Grab the latest version of Chrome Canary, Chrome won't work because 64 bit is required by the custom runtime.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the runtime: &lt;a href=&quot;https://bitbucket.org/vladikoff/archon/get/v1.1-x86_64.zip&quot; target=&quot;_blank&quot;&gt;https://bitbucket.org/vladikoff/archon/get/v1.1-x86_64.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unzip file and load the directory as an unpacked extension in Chrome&lt;br /&gt;
+Go to &lt;strong&gt;Extensions&lt;/strong&gt; in Chrome and enable&lt;strong&gt; Developer mode. &lt;/strong&gt;Press &lt;strong&gt;Load unpacked extensions...&lt;/strong&gt; button and choose the unzipped directory&lt;/li&gt;
+&lt;li&gt;Download gReader Chrome extension: &lt;a href=&quot;https://github.com/noinnion/greader/tree/master/chrome&quot; target=&quot;_blank&quot;&gt;https://github.com/noinnion/greader/tree/master/chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unzip file and load the directory as an unpacked extension in Chrome&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Launch&lt;/strong&gt; to load gReader.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/chrome_extensions.png&quot;&gt;&lt;img class=&quot;alignnone wp-image-7529 size-full&quot; src=&quot;/assets/chrome_extensions.png&quot; alt=&quot;chrome_extensions&quot; width=&quot;889&quot; height=&quot;943&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Feedly under DDoS attack</title>
+   <link href="http://localhost:4000/greader/news+/2014/06/11/feedly-ddos-attack/"/>
+   <updated>2014-06-11T20:59:26+02:00</updated>
+   <id>http://localhost:4000/greader/news+/2014/06/11/feedly-ddos-attack</id>
+   <content type="html">&lt;p&gt;Many of you have report us about synchronization issue with Feedly. The reason for the issue is that &lt;a title=&quot;Feedly under DDoS attack&quot; href=&quot;http://blog.feedly.com/2014/06/11/denial-of-service-attack/&quot; target=&quot;_blank&quot;&gt;Feedly was attacked by criminals with a distributed denial of service attack (DDoS)&lt;/a&gt;.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;Feedly is working on some changes to their infrastructure that will bring them back online. It will take a few more hours before service is restored.&lt;/p&gt;
+&lt;h4&gt;How to use gReader without Feedly&lt;/h4&gt;
+&lt;p&gt;The downside of online feed aggregators is the Availability. If the service is down for any reasons you cannot retrieve your daily news. You always rely on the availability of the services. gReader offers in addition to the online services a local service. All subscriptions are saved locally on your device. Synchronizing them will provide you with the most updated feed news. There are no fetch interval.&lt;/p&gt;
+&lt;p&gt;To use the local service you need to logout and select RSS Reader (local). Pressing Start will bring you to the familiar interface. You could add your subscriptions normally or import your OPML file to gReader. OPML can be exported in Manage Sources view.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Custom notification for feeds</title>
+   <link href="http://localhost:4000/greader/news+/2014/05/13/custom-notification-for-feeds/"/>
+   <updated>2014-05-13T07:35:01+02:00</updated>
+   <id>http://localhost:4000/greader/news+/2014/05/13/custom-notification-for-feeds</id>
+   <content type="html">&lt;p&gt;With gReader 3.7.0 and News+ v1.1.0 we introduce Custom Notification. Custom Notification is a Pro/Premium feature.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;What is Custom Notification?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Normally when new articles are synced gReader/News+ notifies that you have new articles. The notification only shows you that there are new articles but not from where. Now with Custom Notification you can tell the app to notify you when new articles arrive in certain feeds. When you have important feeds you really want to read you can use Custom Notification.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to enable Custom Notificaiton?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First you need to enable it in the setting. &lt;strong&gt;Settings-&amp;gt;Notification-&amp;gt;Custom Notification&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-7354&quot; src=&quot;/assets/custom_notification_settings.jpg&quot; alt=&quot;custom_notification_settings&quot; width=&quot;300&quot; height=&quot;513&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Enable Custom Notification for feeds you want to get notified. Open &lt;strong&gt;Feed Preference dialog &lt;/strong&gt;and check Custom Notification.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/custom_notification_feed_preference.jpg&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-7355&quot; src=&quot;/assets/custom_notification_feed_preference.jpg&quot; alt=&quot;custom_notification_feed_preference&quot; width=&quot;300&quot; height=&quot;533&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now wait for the new custom notification.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://noinnion.com/wp-content/uploads/custom_notifiation_new_articles.jpg&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-7356&quot; src=&quot;/assets/custom_notifiation_new_articles.jpg&quot; alt=&quot;custom_notifiation_new_articles&quot; width=&quot;300&quot; height=&quot;113&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>New themes for gReader and News+: Blue and Green</title>
+   <link href="http://localhost:4000/greader/news+/2014/05/13/new-themes-for-greader-and-newsplus-blue-and-green/"/>
+   <updated>2014-05-13T07:34:30+02:00</updated>
+   <id>http://localhost:4000/greader/news+/2014/05/13/new-themes-for-greader-and-newsplus-blue-and-green</id>
+   <content type="html">&lt;p&gt;With gReader 3.7.0 and News+ v1.1.0 we introduce 2 more themes. Blue and Green themes should give you more choices for light themes. You will find the new themes in the theme dialog.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Green&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[image src=&quot;/wp-content/uploads/greader_theme_green.jpg&quot; alt=&quot;Theme Green&quot;]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Blue&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[image src=&quot;/wp-content/uploads/greader_theme_blue.jpg&quot; alt=&quot;Theme Blue&quot;]&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Tell us what you think about them?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>EverClip Clipboard Manager From gReader Creater Gets Updated With Text Expansion Capabilities</title>
+   <link href="http://localhost:4000/everclip/2014/03/28/everclip-clipboard-manager-from-greader-creator-gets-updated-with-text-expansion-capabilites/"/>
+   <updated>2014-03-28T08:28:25+01:00</updated>
+   <id>http://localhost:4000/everclip/2014/03/28/everclip-clipboard-manager-from-greader-creator-gets-updated-with-text-expansion-capabilites</id>
+   <content type="html">&lt;p&gt;AndroidPolice just announced the new version of EverClip.&lt;br /&gt;
+http://www.androidpolice.com/2014/03/28/everclip-clipboard-manager-from-greader-creater-gets-updated-with-text-expansion-capabilities/&lt;/p&gt;
+&lt;!--more--&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Feedly Extension for News+</title>
+   <link href="http://localhost:4000/news+/2014/01/05/feedly-extension-for-newsplus/"/>
+   <updated>2014-01-05T02:23:13+01:00</updated>
+   <id>http://localhost:4000/news+/2014/01/05/feedly-extension-for-newsplus</id>
+   <content type="html">&lt;p&gt;We proudly announce that Feedly extension is available for News+. Feedly Cloud is one of the most popular feed aggregator on the internet.  You will find the extension on &lt;a title=&quot;Feedly extension on Play Store&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.extension.feedly&quot; target=&quot;_blank&quot;&gt;Play Store&lt;/a&gt;.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;How to use?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a title=&quot;News+&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus&quot; target=&quot;_blank&quot;&gt;News+&lt;/a&gt; and &lt;a title=&quot;Feedly extension&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.extension.feedly&quot; target=&quot;_blank&quot;&gt;Feedly extension&lt;/a&gt; on your Android device.&lt;/li&gt;
+&lt;li&gt;Open News+ and press on the drop-down in action bar.&lt;/li&gt;
+&lt;li&gt;Select Feedly extension in the list.&lt;/li&gt;
+&lt;li&gt;On Login screen press Login button.&lt;/li&gt;
+&lt;li&gt;Sign into Feedly with your Google Account.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing gReader</title>
+   <link href="http://localhost:4000/2014/01/01/introducing-greader/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/introducing-greader</id>
+   <content type="html">&lt;p&gt;gReader was developed in the time when Google Reader service was the standard for feed aggregators. After it closure lots of new and innovative RSS services have arisen to light. gReader has decided to support 2 of the most popular services on the market, &lt;strong&gt;Feedly&lt;/strong&gt; and &lt;strong&gt;The Old Reader&lt;/strong&gt;. Even with the changes the goal is still to deliver best possible reading experience. So what makes gReader so special in comparison to other RSS readers.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3&gt;Simple, Fast and Intuitive&lt;/h3&gt;
+
+&lt;p&gt;Many of us have little time but we have to or want to consume a lot of information during the day. Our goal was to create a news reader with the best possible reading experience. Users can quickly read their news/feeds in a simple and intuitive user interface. Article pages can be reduced to the minimum of just the main contents, so that a reader could just concentrate on, well… reading! Consuming content at places without an internet connection is also possible using the great Offline Reading features. You can also let gReader read aloud your news for you, leaving your hands free for other tasks. These and many more features could help you to make reading your news faster.&lt;/p&gt;
+
+&lt;h3&gt;Feedly, The Old Reader, local RSS Reader&lt;/h3&gt;
+
+&lt;p&gt;As mentioned above gReader supports 2 of the most popular services, Feedly and The Old Reader. Both are great feed aggregators and are similar to Google Reader. Using feed aggregators keeps your data up-to-date on multiple devices. gReader also offers a local aggregator, i.e. all data are saved on your device. The advantage of this service is that feed contents can be updated faster. There is no delay of feed updates in contrast to the online versions.&lt;/p&gt;
+
+&lt;h3&gt;Awesome Themes&lt;/h3&gt;
+
+&lt;p&gt;gReader offers you many beautiful themes for reading your news. They are separated in Light (Default, Blue, Green) and Dark themes (Sepia, Dark, Black). The different themes don’t only have aesthetic but also functional aspects. Light themes can be used during the day especially when the sun is shining. However Dark themes are used mostly in the evening or night to relieve eyes.&lt;/p&gt;
+
+&lt;h3&gt;Beautiful Widgets&lt;/h3&gt;
+
+&lt;p&gt;Widgets are convenient way to display information on your home screen. gReader includes 4 different kinds of beautiful and customizable widgets to personalize your home screen.&lt;/p&gt;
+
+&lt;h3&gt;Offline Reading&lt;/h3&gt;
+
+&lt;p&gt;One strength of gReader is the Offline Reading feature. Offline Reading allows you to read you news without having internet connection. Download your content at home and read them while going to work with the subway. It is very easy to setup offline reading so that offline content is always available when you need them. Not even website contents but also podcast contents can be retrieved for offline.&lt;/p&gt;
+
+&lt;h3&gt;Many many useful features&lt;/h3&gt;
+
+&lt;p&gt;There are many more useful features integrated in gReader. Our users LOVED how customizable gReader is, and it made sense because a lot of the feature ideas came from the community itself. The features are self-explained and are waiting for you to discover them.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Voice Reading:&lt;/li&gt;
+&lt;li&gt;Custom Notification&lt;/li&gt;
+&lt;li&gt;Search Filters&lt;/li&gt;
+&lt;li&gt;Reading Mode&lt;/li&gt;
+&lt;li&gt;Tablet-Optimized&lt;/li&gt;
+&lt;li&gt;Tasker Plugin&lt;/li&gt;
+&lt;li&gt;Managing Subscriptions&lt;/li&gt;
+&lt;li&gt;Mark Read On Scroll&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Right app for you&lt;/h3&gt;
+
+&lt;p&gt;If you love reading news then gReader is the right app for you!&lt;/p&gt;
+
+&lt;p&gt;Head to &lt;a href=&quot;httpshttps://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader&quot;&gt;Play Store&lt;/a&gt; to get the app.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>News+, From Developer Of gReader, Hits The Play Store With Loads Of Features And Multi-Service Support</title>
+   <link href="http://localhost:4000/news+/2013/12/20/news-from-developer-of-greader-hits-the-play-store-with-loads-of-features-and-multi-service-support/"/>
+   <updated>2013-12-20T08:31:29+01:00</updated>
+   <id>http://localhost:4000/news+/2013/12/20/news-from-developer-of-greader-hits-the-play-store-with-loads-of-features-and-multi-service-support</id>
+   <content type="html">&lt;p&gt;AndroidPolice just published a review for News+.&lt;br /&gt;
+&lt;a href=&quot;http://www.androidpolice.com/2013/12/20/new-app-news-from-developer-of-greader-hits-the-play-store-with-loads-of-features-and-multi-service-support/&quot; target=&quot;_blank&quot;&gt;http://www.androidpolice.com/2013/12/20/new-app-news-from-developer-of-greader-hits-the-play-store-with-loads-of-features-and-multi-service-support/&lt;/a&gt;&lt;/p&gt;
+&lt;!--more--&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Difference between News+ and gReader</title>
+   <link href="http://localhost:4000/greader/news+/2013/12/15/difference-between-newsplus-and-greader/"/>
+   <updated>2013-12-15T09:16:05+01:00</updated>
+   <id>http://localhost:4000/greader/news+/2013/12/15/difference-between-newsplus-and-greader</id>
+   <content type="html">&lt;p&gt;Many of you are wondering what's the difference between News+ and gReader. In this post we want to point out the differences. On the first view the user interface is very similar to gReader's user interface. That's true because News+ is built from gReader app. We are not trying to reinvent the wheel.  Looking into more detail there are many new features that you could find in News+.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Google News extension&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The idea of creating News+ app was actually before Google announcement about the closure of Google Reader. We wanted to create an app for &lt;strong&gt;Google News&lt;/strong&gt;. There are not many good Google News app out there so we decided to develop an app that covers the most important features of Google News.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Multi-Language&lt;/strong&gt;: Google News supports multi-language in the form of regions. You can get the most up-to-dated news for your language by selecting the specific region. In News+ just press the globe button in the actionbar. All regions but Japanese region are supported. Selecting a region will show you the corresponding topics.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Related News&lt;/strong&gt;: Want to read more about article topic, you can find related news at the end of each article content.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Searching&lt;/strong&gt;:&lt;strong&gt; &lt;/strong&gt;The most important feature is searching for news containing special words. Do you want to track news for a certain topic? Press the search button in the actionbar and type in the query you want to search. News+ will create a search tag and show you all article relating to your query.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Less support effort with Extensions&lt;br /&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Extensions is the new way to integrate services into News+. Since Google has decided to shutdown Google Reader, lots of new and innovative RSS services have arisen to light. It is very difficult to support all of them in one app like gReader. The benefits of extensions are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Extensions are independent app which could be developed by everyone. They are &lt;strong&gt;maintained and published individually&lt;/strong&gt;. If something related to the extension is wrong only the extension needs to be fixed. It does not affect News+ app.&lt;/li&gt;
+&lt;li&gt;With &lt;strong&gt;less support effort&lt;/strong&gt; we can concentrate more on the development of News+ app.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;More services also less-known ones&lt;/strong&gt; could be supported.&lt;/li&gt;
+&lt;li&gt;Not only feed services but also &lt;strong&gt;Read Later services&lt;/strong&gt; (Pocket, Instapaper, Readability) or &lt;strong&gt;Webservices&lt;/strong&gt; (Youtube, Facebook, Twitter, Reddit, Livescore, ...) could be realized with News+ extensions. &lt;strong&gt;Website&lt;/strong&gt; owners could also create a special extension for their websites.&lt;/li&gt;
+&lt;li&gt;The best thing is that you can use &lt;strong&gt;all services in one app&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We encourage the News+ community to create extension, and have them published to everyone!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why not integrate all this in gReader?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;gReader was designed to use only with Google Reader. Since its closure we have moved to Feedly and The Old Reader. The transition was more or less painful.  In case of Feedly all gReader's functionalities could be realized with Feedly Cloud API. In case of The Old Reader not all functionalities could be implemented because of the lack api access. It seems that The Old Reader's implementation is not completed. We would face the same problem with the integration of other services.&lt;/p&gt;
+&lt;p&gt;Another aspect is the large user base of gReader. Changing gReader to News+ would lead to internal changes. All users are forced to login and sync again.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Benefits of gReader&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you are using Feedly and The Old Reader and  are happy with it so there is no need to change. gReader will be developed further. It will get updates and improvements in the future. There are other advantages why you should use gReader.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Better integration for Feedly&lt;/strong&gt;: Feedly offers many useful features (topics, ranking, ...) that could be integrated into gReader.  The main advantage over News+ is that it only has to support 2 services. Developing new features is much easier than having support for a lot of services. We will try to improve the reading experience so that reading is much more fun.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No limitation:&lt;/strong&gt; Using extensions with external apps has some limitation. Transactions have to be sent between News+ and extensions. It makes synchronization faster on gReader.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;What should I use?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Both News+ and gReader are great readers. Above we have listed the differences between both apps. We also outlined why there should be 2 different apps (even they look similar). It depends on you what features you like. Both apps have a free version which you can use with only some limitation. If you want more so you should go for Pro (gReader) or Premium (News+) .&lt;/p&gt;
+&lt;p&gt;We know that people will complain about the existence of 2 apps and are not satisfied to pay again.  We are working hard to improve the reading experience on both apps  and hope you understand our decision. Thank for your support.&lt;/p&gt;
+&lt;p&gt;[ssba]&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing News+</title>
+   <link href="http://localhost:4000/news+/2013/12/01/introducing-newsplus/"/>
+   <updated>2013-12-01T07:46:44+01:00</updated>
+   <id>http://localhost:4000/news+/2013/12/01/introducing-newsplus</id>
+   <content type="html">&lt;p&gt;Since Google has decided to shutdown Google Reader, lots of new and innovative RSS services have arisen to light. Many of those services appeared as worthy replacements, and even an upgrade. We couldn’t choose just one or two, and we also had to make some decisions about how our work will continue. We decided not to pick! We created a new app that is the successor of gReader, taking it’s features and functionality but supports as many reading services as possible: &lt;b&gt;News+&lt;/b&gt;.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;img class=&quot;mce-wp-more mceItemNoResize&quot; title=&quot;More...&quot; src=&quot;/assets/trans.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Simple, fast and intuitive&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our goal was to create a news reader with the best possible reading experience. Our users LOVED how customizable gReader is, and it made sense because a lot of the feature ideas came from the community itself. So, on News+ users can also quickly read their feeds in a simple and intuitive user interface. Article pages can be reduced to the minimum of just the main contents, so that a reader could just concentrate on, well… reading! Consuming content at places without an internet connection is also possible using the great offline Reading features. You can also let News+ read your news to you when out loud, leaving your hands free for other tasks. These and many more features could be found on the features page, at &lt;a title=&quot;Features&quot; href=&quot;http://newsplus.co/features/&quot;&gt;http://newsplus.co/features/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Why choose just one service? Supporting extensions in News+&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;The power of News+ is as an aggregator. We took gReader’s functional features and added the ability to expand News+ with extensions. Not just for RSS services, but Read Later services as well (Pocket, Readability or Instapaper), and news websites could be integrated too. We plan on integrating more and more services to News+, making it a one-stop-shop for all your news and articles needs. In a single, unified user interface, you can now read and consume content from various different services, and the list will just get bigger and bigger.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;aligncenter size-large wp-image-427&quot; src=&quot;/assets/extensions-1024x596.png&quot; alt=&quot;extensions&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Extensions are independent app that can be created and published by everyone. News+ recognized the extensions by itself and shows them directly in the app. Here is a list of current services News+ supports:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://google.com/news&quot; target=&quot;_blank&quot;&gt;Google News&lt;/a&gt;: Google News is a free news aggregator, selecting most up-to-date information from thousands of publications. (Integrated extension)&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;InoReader&quot; href=&quot;http://inoreader.com&quot; target=&quot;_blank&quot;&gt;InoReader&lt;/a&gt;: InoReader is light and fast RSS/Atom Reader inspired by Google Reader. &lt;a title=&quot;Play Store&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.extension.inoreader&quot; target=&quot;_blank&quot;&gt;Play Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Bazqux Reader&quot; href=&quot;http://bazqux.com&quot; target=&quot;_blank&quot;&gt;Bazqux&lt;/a&gt;: RSS Reader that shows comments to posts . &lt;a title=&quot;Play Store&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.extension.bazqux&quot; target=&quot;_blank&quot;&gt;Play Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Tiny Tiny Rss&quot; href=&quot;http://tt-rss.org&quot; target=&quot;_blank&quot;&gt;Tiny Tiny Rss&lt;/a&gt;: Tiny Tiny RSS is an open source web-based news feed reader and aggregator. &lt;a title=&quot;Play Store&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.extension.ttrss&quot; target=&quot;_blank&quot;&gt;Play Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Feedbin&quot; href=&quot;http://feedbin.me&quot; target=&quot;_blank&quot;&gt;FeedBin&lt;/a&gt;: A fast, simple RSS feed reader that delivers a great reading experience. &lt;a title=&quot;Play Store&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.extension.feedbin&quot; target=&quot;_blank&quot;&gt;Play Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Newsblur&quot; href=&quot;http://newsblur.com&quot; target=&quot;_blank&quot;&gt;NewsBlur&lt;/a&gt;: NewsBlus is a personal news reader bringing people together to talk about the world. &lt;a title=&quot;Play Store&quot; href=&quot;https://play.google.com/store/apps/details?id=com.asafge.newsblurplus&quot; target=&quot;_blank&quot;&gt;Play Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;SubReader&quot; href=&quot;http://subreader.com&quot; target=&quot;_blank&quot;&gt;SubReader&lt;/a&gt;: New way to keep up with your favourite websites. All your favourite websites in one place. &lt;a title=&quot;Download&quot; href=&quot;http://subreader.com/static/files/SubReaderExtension.apk&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Reedah&quot; href=&quot;http://reedah.com&quot; target=&quot;_blank&quot;&gt;Reedah&lt;/a&gt;: Reedah is a replacement for Google Reader that lets you use existing feed reader apps and synchronize your RSS feeds between devices. &lt;a title=&quot;Download&quot; href=&quot;http://www.reedah.com/ReedahExtension.apk&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;CommaFeed&quot; href=&quot;https://commafeed.com&quot; target=&quot;_blank&quot;&gt;CommaFeed&lt;/a&gt;: CommaFeed is a bloat-free feed reader. It aims to replace Google Reader while keeping things simple. &lt;a title=&quot;GitHub&quot; href=&quot;https://github.com/Athou/commafeed-newsplus&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Pocket&quot; href=&quot;http://getpocket.com&quot; target=&quot;_blank&quot;&gt;Pocket&lt;/a&gt;: News+ extension for the Pocket read-later service. &lt;a title=&quot;Play Store&quot; href=&quot;https://play.google.com/store/apps/details?id=com.asafge.pocketplus&quot; target=&quot;_blank&quot;&gt;Play Store&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div dir=&quot;ltr&quot;&gt;
+&lt;p&gt;Finally, we encourage the News+ community to create extension, and have them published to everyone!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Play Store: &lt;a title=&quot;News+&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus&quot; target=&quot;_blank&quot;&gt;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus&lt;br /&gt;
+&lt;/a&gt;Play Store (Premium): &lt;a title=&quot;News+ Premium&quot; href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.premium&quot; target=&quot;_blank&quot;&gt;https://play.google.com/store/apps/details?id=com.noinnion.android.newsplus.premium&lt;/a&gt;&lt;br /&gt;
+API Documentation and Extension source codes: &lt;a href=&quot;https://github.com/noinnion/newsplus&quot; target=&quot;_blank&quot;&gt;https://github.com/noinnion/newsplus&lt;br /&gt;
+&lt;/a&gt;Forum: &lt;a href=&quot;https://groups.google.com/forum/#!forum/news_plus&quot; target=&quot;_blank&quot;&gt;https://groups.google.com/forum/#!forum/news_plus&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing EverClip</title>
+   <link href="http://localhost:4000/everclip/2013/01/05/introducing-everclip/"/>
+   <updated>2013-01-05T11:49:54+01:00</updated>
+   <id>http://localhost:4000/everclip/2013/01/05/introducing-everclip</id>
+   <content type="html">&lt;p&gt;Welcome to EverClip. EverClip is made for gathering and processing information quickly and easily. You can share any information to EverClip and save it to Evernote.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;[x_video_embed]&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/nynxSw7REmo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;[/x_video_embed]&lt;/p&gt;
+&lt;h3&gt;Clipboard Monitor&lt;/h3&gt;
+&lt;p&gt;Text copied to clipboard will be automatically add to EverClip. It also recognizes urls and downloads the corresponding data. EverClip also displays actions for the copied text. Right now there are following actions: Search, Share, Open in Browser, Email, Call and Translate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://everclip.net/wp-content/uploads/clipboard_monitor.png&quot;&gt;&lt;img class=&quot;size-medium wp-image-54 alignnone&quot; alt=&quot;clipboard_monitor&quot; src=&quot;/assets/clipboard_monitor-276x300.png&quot; width=&quot;276&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Text Expander&lt;/h3&gt;
+&lt;p&gt;Do you have phrases which you write very often. With Text Expander you can create a snippet with an abbreviation. Typing this abbr. in any text box will expand it with the saved phrase. NOTE: Text Expander only works on Android with Jelly Bean.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://everclip.net/wp-content/uploads/text_expander.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-55&quot; alt=&quot;text_expander&quot; src=&quot;/assets/text_expander-276x300.png&quot; width=&quot;276&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Web Clipper&lt;/h3&gt;
+&lt;p&gt;You can clip web information from urls and save the content to Evernote. It never was easier to save website content.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://everclip.net/wp-content/uploads/web_clipper.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-56&quot; alt=&quot;web_clipper&quot; src=&quot;/assets/web_clipper-276x300.png&quot; width=&quot;276&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Play Store&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.noinnion.android.everclip&quot;&gt;https://play.google.com/store/apps/details?id=com.noinnion.android.everclip&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>gReader Is Hands Down The Incomparable King Of RSS Readers On Android</title>
+   <link href="http://localhost:4000/greader/2012/09/10/greader-is-hands-down-the-incomparable-king-of-rss-readers/"/>
+   <updated>2012-09-10T08:20:58+02:00</updated>
+   <id>http://localhost:4000/greader/2012/09/10/greader-is-hands-down-the-incomparable-king-of-rss-readers</id>
+   <content type="html">&lt;p&gt;[Review] gReader Is Hands Down The Incomparable King Of RSS Readers On Android -&lt;br /&gt;
+&lt;a href=&quot;http://www.androidpolice.com/2012/09/10/review-greader-is-hands-down-the-incomparable-king-of-rss-readers-on-android/&quot; title=&quot;[Review] gReader Is Hands Down The Incomparable King Of RSS Readers On Android&quot; target=&quot;_blank&quot;&gt;http://www.androidpolice.com/2012/09/10/review-greader-is-hands-down-the-incomparable-king-of-rss-readers-on-android/&lt;/a&gt;&lt;/p&gt;
+&lt;!--more--&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>gReader App for RSS Feeds</title>
+   <link href="http://localhost:4000/greader/2012/02/22/greader-app-for-rss-feeds/"/>
+   <updated>2012-02-22T08:21:18+01:00</updated>
+   <id>http://localhost:4000/greader/2012/02/22/greader-app-for-rss-feeds</id>
+   <content type="html">&lt;p&gt;gReader App for RSS Feeds&lt;br /&gt;
+&lt;a href=&quot;http://www.talkandroid.com/reviews/apps/review-greader-app-for-rss-feeds/&quot; title=&quot;gReader App for RSS Feeds&quot; target=&quot;_blank&quot;&gt;http://www.talkandroid.com/reviews/apps/review-greader-app-for-rss-feeds/&lt;/a&gt;&lt;/p&gt;
+&lt;!--more--&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing gReader</title>
+   <link href="http://localhost:4000/greader/2010/05/28/introducing-greader/"/>
+   <updated>2010-05-28T04:55:58+02:00</updated>
+   <id>http://localhost:4000/greader/2010/05/28/introducing-greader</id>
+   <content type="html">&lt;p&gt;gReader was developed in the time when Google Reader service was the standard for feed aggregators. After it closure lots of new and innovative RSS services have arisen to light. gReader has decided to support 2 of the most popular services on the market, &lt;strong&gt;Feedly&lt;/strong&gt; and &lt;strong&gt;The Old Reader&lt;/strong&gt;. Even with the changes the goal is still to deliver best possible reading experience. So what makes gReader so special in comparison to other RSS readers.&lt;/p&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Simple, Fast and Intuitive&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many of us have little time but we have to or want to consume a lot of information during the day. Our goal was to create a news reader with the best possible reading experience. Users can quickly read their news/feeds in a simple and intuitive user interface. Article pages can be reduced to the minimum of just the main contents, so that a reader could just concentrate on, well… reading! Consuming content at places without an internet connection is also possible using the great Offline Reading features. You can also let gReader read aloud your news for you, leaving your hands free for other tasks. These and many more features could help you to make reading your news faster.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feedly, The Old Reader, local RSS Reader&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As mentioned above gReader supports 2 of the most popular services, Feedly and The Old Reader. Both are great feed aggregators and are similar to Google Reader. Using feed aggregators keeps your data up-to-date on multiple devices. gReader also offers a local aggregator, i.e. all data are saved on your device. The advantage of this service is that feed contents can be updated faster. There is no delay of feed updates in contrast to the online versions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Awesome Themes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;gReader offers you many beautiful themes for reading your news. They are separated in Light (Default, Blue, Green) and Dark themes (Sepia, Dark, Black). The different themes don't only have aesthetic but also functional aspects. Light themes can be used during the day especially when the sun is shining. However Dark themes are used mostly in the evening or night to relieve eyes.&lt;/p&gt;
+&lt;p&gt;[image src=&quot;/wp-content/uploads/greader_theme.png&quot; alt=&quot;Awesome themes&quot;]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beautiful Widgets&lt;/strong&gt;&lt;br /&gt;
+[column type=&quot;one-half&quot;] Widgets are convenient way to display information on your home screen. gReader includes 4 different kinds of beautiful and customizable widgets to personalize your home screen. [/column]&lt;br /&gt;
+[column type=&quot;one-half&quot; last=&quot;true&quot;] [image src=&quot;/wp-content/uploads/greader_widgets.png&quot; alt=&quot;Beautiful widgets&quot;] [/column]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Offline Reading&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One strength of gReader is the Offline Reading feature. Offline Reading allows you to read you news without having internet connection. Download your content at home and read them while going to work with the subway. It is very easy to setup offline reading so that offline content is always available when you need them. Not even website contents but also podcast contents can be retrieved for offline.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Many many useful features&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are many more useful features integrated in gReader. Our users LOVED how customizable gReader is, and it made sense because a lot of the feature ideas came from the community itself. The features are self-explained and are waiting for you to discover them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Voice Reading: &lt;/li&gt;
+&lt;li&gt;Custom Notification&lt;/li&gt;
+&lt;li&gt;Search Filters&lt;/li&gt;
+&lt;li&gt;Reading Mode&lt;/li&gt;
+&lt;li&gt;Tablet-Optimized&lt;/li&gt;
+&lt;li&gt;Tasker Plugin&lt;/li&gt;
+&lt;li&gt;Managing Subscriptions&lt;/li&gt;
+&lt;li&gt;Mark Read On Scroll&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Right app for you&lt;/strong&gt;&lt;br /&gt;
+If you love reading news then gReader is the right app for you!&lt;/p&gt;
+</content>
+ </entry>
+ 
 
 </feed>
