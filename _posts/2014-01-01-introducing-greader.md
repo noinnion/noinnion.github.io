@@ -19,13 +19,9 @@ As mentioned above gReader supports 2 of the most popular services, Feedly and T
 
 gReader offers you many beautiful themes for reading your news. They are separated in Light (Default, Blue, Green) and Dark themes (Sepia, Dark, Black). The different themes don’t only have aesthetic but also functional aspects. Light themes can be used during the day especially when the sun is shining. However Dark themes are used mostly in the evening or night to relieve eyes.
 
-{% picture greader_themes.png alt="Awesome Themes" %}
-
 ### Beautiful Widgets
 
 Widgets are convenient way to display information on your home screen. gReader includes 4 different kinds of beautiful and customizable widgets to personalize your home screen.
-
-{% picture greader_widgets.png alt="Beautiful Widgets" %}
 
 ### Offline Reading
 
