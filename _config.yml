@@ -16,7 +16,7 @@ excerpt_separator:  <!--more-->
 version:            1.0.0
 
 # Conversion
-markdown:           redcarpet
+markdown:           kramdown
 
 # Pagination
 plugins:            [jekyll-paginate]
