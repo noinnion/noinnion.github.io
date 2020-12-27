@@ -15,14 +15,11 @@ excerpt_separator:  <!--more-->
 # Custom vars
 version:            1.0.0
 
-# Plugins
-plugins_dir:        [jekyll-picture-tag]
-
 # Conversion
 markdown:           redcarpet
 
 # Pagination
-gems:               [jekyll-paginate]
+plugins:            [jekyll-paginate]
 paginate:           6
 paginate_path:      "blog/page:num"
 
