@@ -7,6 +7,13 @@ section: gReader
 menu: greader
 ---
 
+##### 5.2.0
+- Voice Reading: Improve content extraction
+- Voice Reading: Auto detect language
+- Rewarded Ad: Get Premium from watching video 
+- UX/UI: New icons
+- Bug fixes and performance improvements
+
 ##### 5.1.4
 - Fix article scrolling issues
 - Bug fixes and performance improvements
